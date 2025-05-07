@@ -1,7 +1,7 @@
 <script>
 	const projects = [
 		{
-			title: 'BuzzChat',
+			title: 'BuzzChat (WIP)',
 			description:
 				'End-to-end encrypted chat app with Go backend, Svelte frontend, and Valkey cache. Because who needs plain old chat when you can have secure, fast, and encrypted messages?',
 			link: 'https://buzz-chat-alpha.vercel.app',
@@ -9,32 +9,49 @@
 			tags: ['Go', 'Svelte', 'PostgreSQL', 'Valkey', 'TailwindCSS']
 		},
 		{
-			title: 'Bugbee',
+			title: 'BugBee',
 			description:
 				'A social platform with communities, chat, video calls, and NSFW detection. Your new favorite place to talk, share, and avoid unwanted surprises.',
 			link: 'https://thebugbee.vercel.app',
 			icon: '🐝',
 			tags: ['React', 'Go', 'NodeJS', 'FastAPI', 'PostgreSQL', 'Valkey']
+		},
+		{
+			title: 'Immerse',
+			description: 'Where the only thing buffering is your self-control.',
+			link: 'https://github.com/RickinShah/Immerse',
+			icon: '📺',
+			tags: ['FFmpeg', 'Java', 'Spring', 'Nginx', 'HLS', 'MariaDB', 'Shell Script']
+		},
+		{
+			title: 'Image Editor',
+			description: 'Open it up, edit a photo, and pretend it’s Photoshop for a second.',
+			link: 'https://github.com/RickinShah/Image-Editor',
+			icon: '🖼️',
+			tags: ['Python', 'Tkinter', 'PIL']
+		}
+	];
+
+	const miscellaneous = [
+		{
+			title: 'Hyprland Configs',
+			description: 'Custom setup, because default is for amateurs.',
+			icon: '💻',
+			link: 'https://github.com/RickinShah/hyprland-config'
+		},
+		{
+			title: 'Neovim Configs',
+			description: 'Who needs a mouse when you’ve got muscle memory and regret?',
+			icon: '🎨',
+			link: 'https://github.com/RickinShah/nvim-config'
 		}
 	];
 
 	const techStack = [
-		{
-			name: 'React',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-		},
 		{ name: 'Go', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
 		{
 			name: 'Java',
 			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
-		},
-		{
-			name: 'Spring Boot',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
-		},
-		{
-			name: 'Svelte',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg'
 		},
 		{
 			name: 'C/C++',
@@ -45,17 +62,21 @@
 			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
 		},
 		{
-			name: 'FFmpeg',
-			logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/FFmpeg_icon.svg/2048px-FFmpeg_icon.svg.png'
+			name: 'Spring Boot',
+			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
 		},
 		{ name: 'FastAPI', logo: 'https://logo.svgcdn.com/d/fastapi-plain-8x.png' },
 		{
-			name: 'Nginx',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg'
+			name: 'Svelte',
+			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg'
 		},
 		{
-			name: 'Docker',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'
+			name: 'React',
+			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+		},
+		{
+			name: 'FFmpeg',
+			logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/FFmpeg_icon.svg/2048px-FFmpeg_icon.svg.png'
 		},
 		{
 			name: 'PostgreSQL',
@@ -64,6 +85,14 @@
 		{
 			name: 'Valkey / Redis',
 			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg'
+		},
+		{
+			name: 'Nginx',
+			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg'
+		},
+		{
+			name: 'Docker',
+			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'
 		},
 		{ name: 'Neovim', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg' },
 		{
@@ -74,7 +103,11 @@
 			name: 'JetBrains IDEA',
 			logo: 'https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png'
 		},
-		{ name: 'Eclipse', logo: 'https://logodix.com/logo/732150.png' }
+		{ name: 'Eclipse', logo: 'https://logodix.com/logo/732150.png' },
+		{
+			name: 'Arch Linux',
+			logo: 'https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-1024.png'
+		}
 	];
 
 	let currentIndex = 0;
@@ -137,7 +170,7 @@
 					class="flex items-center gap-2 text-lg font-bold tracking-tight text-teal-400 transition-all duration-500 sm:gap-3 sm:text-xl"
 				>
 					<div
-						class="relative h-8 w-8 flex-shrink-0 transform overflow-hidden transition-all duration-500 ease-in-out sm:h-10 sm:w-10"
+						class="relative hidden h-8 w-8 flex-shrink-0 transform overflow-hidden transition-all duration-500 ease-in-out sm:h-10 sm:w-10 md:inline"
 						style="width: {showMiniProfile ? '40px' : '0px'}; opacity: {showMiniProfile
 							? '1'
 							: '0'};"
@@ -149,7 +182,7 @@
 						/>
 					</div>
 					<span
-						class="transform overflow-hidden bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-sm text-transparent transition-all duration-500 md:text-lg"
+						class="hidden transform overflow-hidden bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-sm text-transparent transition-all duration-500 md:inline md:text-lg"
 						style="max-width: {showMiniProfile ? '150px' : '0px'}; opacity: {showMiniProfile
 							? '1'
 							: '0'};"
@@ -158,9 +191,14 @@
 					</span>
 				</a>
 				<nav>
-					<ul class="flex space-x-0 sm:space-x-6 md:space-x-4 lg:space-x-8">
+					<ul class="center flex space-x-2 sm:space-x-6 md:space-x-4 lg:space-x-8">
 						<li><a href="#about" class="transition-colors hover:text-teal-400">About</a></li>
 						<li><a href="#projects" class="transition-colors hover:text-teal-400">Projects</a></li>
+						<li>
+							<a href="#miscellaneous" class="transition-colors hover:text-teal-400"
+								>Miscellaneous</a
+							>
+						</li>
 						<li><a href="#tech" class="transition-colors hover:text-teal-400">Tech Stack</a></li>
 					</ul>
 				</nav>
@@ -260,7 +298,7 @@
 						>Projects</span
 					>
 				</h2>
-				<p class="mb-12 text-center text-gray-400 sm:mb-16">Some of my recent work</p>
+				<p class="mb-12 text-center text-gray-400 sm:mb-16">Where code meets caffeine</p>
 				<div class="space-y-10">
 					{#each projects as project, i (i)}
 						<div class="group">
@@ -316,6 +354,82 @@
 										<div class="mt-4 border-t border-gray-700/50 pt-4 sm:mt-6 sm:pt-6">
 											<div class="flex items-center text-sm text-gray-400 sm:text-base">
 												<span>View Project</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					{/each}
+				</div>
+			</div>
+		</section>
+
+		<section id="miscellaneous" class="scroll-m-16 pb-16">
+			<div class="mx-auto max-w-4xl">
+				<h2 class="mb-2 text-center text-3xl font-bold sm:text-4xl">
+					<span class="bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent"
+						>Miscellaneous</span
+					>
+				</h2>
+				<p class="mb-12 text-center text-gray-400 sm:mb-16">
+					Because default settings are for the weak
+				</p>
+				<div class="space-y-10">
+					{#each miscellaneous as misc, i (i)}
+						<div class="group">
+							<a href={misc.link} class="block transform transition-all hover:-translate-y-1">
+								<div
+									class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900"
+								>
+									<div
+										class="animate-gradient absolute inset-0 bg-gradient-to-r from-teal-500 to-purple-500 opacity-50 transition-opacity group-hover:opacity-70"
+									></div>
+									<div
+										class="absolute inset-0.5 overflow-hidden rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900"
+									></div>
+									<div class="relative p-6 sm:p-8">
+										<div
+											class="flex flex-col items-start sm:flex-row sm:items-start sm:justify-between"
+										>
+											<div>
+												<span class="mb-3 block text-3xl sm:mb-4 sm:text-4xl">{misc.icon}</span>
+												<h3
+													class="mb-2 bg-gradient-to-r from-teal-400 to-purple-400 bg-clip-text text-xl font-bold text-transparent sm:mb-3 sm:text-2xl"
+												>
+													{misc.title}
+												</h3>
+												<p class="text-sm text-gray-300 sm:text-base">{misc.description}</p>
+											</div>
+											<div
+												class="mt-4 hidden text-teal-400 opacity-0 transition-opacity group-hover:opacity-100 sm:mt-0 sm:block"
+											>
+												<svg
+													class="h-5 w-5 sm:h-6 sm:w-6"
+													fill="none"
+													stroke="currentColor"
+													viewBox="0 0 24 24"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M14 5l7 7m0 0l-7 7m7-7H3"
+													></path>
+												</svg>
+											</div>
+										</div>
+										<!-- <div class="mt-4 flex flex-wrap gap-2">
+											{#each project.tags as tag, i (i)}
+												<span
+													class="rounded-full bg-slate-700/50 px-2.5 py-1 text-xs text-teal-300 sm:px-3 sm:text-sm"
+													>{tag}</span
+												>
+											{/each}
+										</div> -->
+										<div class="mt-4 border-t border-gray-700/50 pt-4 sm:mt-6 sm:pt-6">
+											<div class="flex items-center text-sm text-gray-400 sm:text-base">
+												<span>View Repo</span>
 											</div>
 										</div>
 									</div>
