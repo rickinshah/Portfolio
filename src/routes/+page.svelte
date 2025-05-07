@@ -273,7 +273,7 @@
 				</div>
 			</div>
 
-			<div
+			<!-- <div
 				class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 transform animate-bounce md:block"
 			>
 				<svg
@@ -288,8 +288,8 @@
 						stroke-width="2"
 						d="M19 14l-7 7m0 0l-7-7m7 7V3"
 					></path>
-				</svg>
-			</div>
+				</svg> -->
+			<!-- </div> -->
 		</section>
 		<!-- Projects Section -->
 		<section id="projects" class="scroll-m-16 pb-16">
