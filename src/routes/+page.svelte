@@ -206,8 +206,8 @@
 		</header>
 
 		<!-- Hero Section -->
-		<section id="about" class="flex flex-col justify-center pt-20 pb-30 md:pb-0">
-			<div class="flex flex-col items-center gap-8 md:flex-row md:gap-12">
+		<section id="about" class="flex min-h-screen flex-col justify-center pt-16 md:pt-20">
+			<div class="flex min-h-[calc(100vh-4rem)] flex-col items-center gap-8 md:flex-row md:gap-12">
 				<div class="animate-fade-in order-2 space-y-4 md:order-1 md:w-1/2">
 					<div class="inline-block">
 						<span class="text-base font-semibold text-teal-400 sm:text-lg">Hello, I'm</span>
@@ -259,7 +259,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="animate-float order-1 flex justify-center md:order-2 md:w-1/2">
+				<div class="animate-float order-1 flex justify-center pb-8 md:order-2 md:w-1/2 md:pb-0">
 					<div class="relative">
 						<div
 							class="absolute inset-0 animate-pulse rounded-full bg-gradient-to-r from-teal-500 to-purple-600 opacity-30 blur-xl"
@@ -273,7 +273,9 @@
 				</div>
 			</div>
 
-			<!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce">
+			<div
+				class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 transform animate-bounce md:block"
+			>
 				<svg
 					class="h-5 w-5 text-gray-400 sm:h-6 sm:w-6"
 					fill="none"
@@ -287,9 +289,8 @@
 						d="M19 14l-7 7m0 0l-7-7m7 7V3"
 					></path>
 				</svg>
-			</div> -->
+			</div>
 		</section>
-
 		<!-- Projects Section -->
 		<section id="projects" class="scroll-m-16 pb-16">
 			<div class="mx-auto max-w-4xl">
@@ -365,7 +366,7 @@
 			</div>
 		</section>
 
-		<section id="miscellaneous" class="scroll-m-16 pt-20 pb-16">
+		<section id="miscellaneous" class="scroll-m-16 py-16">
 			<div class="mx-auto max-w-4xl">
 				<h2 class="mb-2 text-center text-3xl font-bold sm:text-4xl">
 					<span class="bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent"
