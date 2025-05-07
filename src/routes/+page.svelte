@@ -206,7 +206,7 @@
 		</header>
 
 		<!-- Hero Section -->
-		<section id="about" class="flex min-h-screen flex-col justify-center pt-20 pb-30 md:pb-0">
+		<section id="about" class="flex flex-col justify-center pt-20 pb-30 md:pb-0">
 			<div class="flex flex-col items-center gap-8 md:flex-row md:gap-12">
 				<div class="animate-fade-in order-2 space-y-4 md:order-1 md:w-1/2">
 					<div class="inline-block">
@@ -365,7 +365,7 @@
 			</div>
 		</section>
 
-		<section id="miscellaneous" class="scroll-m-16 pb-16">
+		<section id="miscellaneous" class="scroll-m-16 pt-20 pb-16">
 			<div class="mx-auto max-w-4xl">
 				<h2 class="mb-2 text-center text-3xl font-bold sm:text-4xl">
 					<span class="bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent"
