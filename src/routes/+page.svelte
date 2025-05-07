@@ -37,7 +37,7 @@
 			title: 'Hyprland Configs',
 			description: 'Custom setup, because default is for amateurs.',
 			icon: '💻',
-			link: 'https://github.com/RickinShah/hyprland-config'
+			link: 'https://github.com/RickinShah/hyprland-dotfiles'
 		},
 		{
 			title: 'Neovim Configs',
