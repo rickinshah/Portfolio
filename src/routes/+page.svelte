@@ -212,7 +212,7 @@
 		</header>
 
 		<!-- Hero Section -->
-		<section id="about" class="flex min-h-screen flex-col justify-center pt-16 md:pt-20">
+		<section id="about" class="relative flex min-h-screen flex-col justify-center pt-16 md:pt-20">
 			<div class="flex min-h-[calc(100vh-4rem)] flex-col items-center gap-8 md:flex-row md:gap-12">
 				<div class="animate-fade-in order-2 space-y-4 md:order-1 md:w-1/2">
 					<div class="inline-block">
@@ -279,9 +279,7 @@
 				</div>
 			</div>
 
-			<!-- <div
-				class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 transform animate-bounce md:block"
-			>
+			<div class="absolute bottom-24 md:bottom-16 left-1/2 -translate-x-1/2 transform animate-bounce">
 				<svg
 					class="h-5 w-5 text-gray-400 sm:h-6 sm:w-6"
 					fill="none"
@@ -294,8 +292,8 @@
 						stroke-width="2"
 						d="M19 14l-7 7m0 0l-7-7m7 7V3"
 					></path>
-				</svg> -->
-			<!-- </div> -->
+				</svg>
+			</div>
 		</section>
 		<!-- Projects Section -->
 		<section id="projects" class="scroll-m-16 pb-16">
