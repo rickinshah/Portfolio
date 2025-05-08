@@ -190,18 +190,24 @@
 						Rickin Shah
 					</span>
 				</a>
-				<nav>
-					<ul class="center flex space-x-2 sm:space-x-6 md:space-x-4 lg:space-x-8">
-						<li><a href="#about" class="transition-colors hover:text-teal-400">About</a></li>
-						<li><a href="#projects" class="transition-colors hover:text-teal-400">Projects</a></li>
-						<li>
-							<a href="#miscellaneous" class="transition-colors hover:text-teal-400"
-								>Miscellaneous</a
-							>
-						</li>
-						<li><a href="#tech" class="transition-colors hover:text-teal-400">Tech Stack</a></li>
-					</ul>
-				</nav>
+				<div class="flex flex-1 justify-center sm:justify-end">
+					<nav>
+						<ul class="flex space-x-0 sm:space-x-6 md:space-x-4 lg:space-x-8">
+							<li><a href="#about" class="transition-colors hover:text-teal-400">About</a></li>
+							<li>
+								<a href="#projects" class="transition-colors hover:text-teal-400">Projects</a>
+							</li>
+							<li>
+								<a href="#miscellaneous" class="transition-colors hover:text-teal-400"
+									>Miscellaneous</a
+								>
+							</li>
+							<li>
+								<a href="#tech" class="transition-colors hover:text-teal-400">Digital Arsenal</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 
@@ -446,10 +452,10 @@
 		<section id="tech" class="scroll-m-16 py-16">
 			<h2 class="mb-2 text-center text-3xl font-bold sm:text-4xl">
 				<span class="bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent"
-					>Tech Stack</span
+					>Digital Arsenal</span
 				>
 			</h2>
-			<p class="mb-12 text-center text-gray-400 sm:mb-16">Technologies I work with</p>
+			<p class="mb-12 text-center text-gray-400 sm:mb-16">What I bring to the coding battlefield</p>
 			<div
 				class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
 			>
