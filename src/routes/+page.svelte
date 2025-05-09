@@ -251,18 +251,6 @@
 							</svg>
 							<span class="hidden md:inline">LinkedIn</span>
 						</a>
-						<a
-							href="/resume.pdf"
-							download="RickinShah_Resume.pdf"
-							class="group flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm transition-all hover:shadow-lg hover:shadow-purple-500/20 sm:px-5 sm:py-3 sm:text-base"
-						>
-							<svg class="h-4 w-4 sm:h-5 sm:w-5" fill="currentColor" viewBox="0 0 24 24">
-								<path
-									d="M14,2H6C4.9,2,4,2.9,4,4v16c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8L14,2z M16,18H8v-2h8V18z M16,14H8v-2h8V14z M13,9V3.5 L18.5,9H13z"
-								></path>
-							</svg>
-							<span class="hidden md:inline">Resume</span>
-						</a>
 					</div>
 				</div>
 				<div class="animate-float order-1 flex justify-center pb-8 md:order-2 md:w-1/2 md:pb-0">
