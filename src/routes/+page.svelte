@@ -87,27 +87,27 @@
 			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg'
 		},
 		{
-			name: 'Nginx',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg'
-		},
-		{
 			name: 'Docker',
 			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'
-		},
-		{ name: 'Neovim', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg' },
-		{
-			name: 'VSCode',
-			logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'
-		},
-		{
-			name: 'JetBrains IDEA',
-			logo: 'https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png'
-		},
-		{ name: 'Eclipse', logo: 'https://logodix.com/logo/732150.png' },
-		{
-			name: 'Arch Linux',
-			logo: 'https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-1024.png'
 		}
+		// {
+		// 	name: 'Nginx',
+		// 	logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg'
+		// },
+		// { name: 'Neovim', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg' },
+		// {
+		// 	name: 'VSCode',
+		// 	logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'
+		// },
+		// {
+		// 	name: 'JetBrains IDEA',
+		// 	logo: 'https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png'
+		// },
+		// { name: 'Eclipse', logo: 'https://logodix.com/logo/732150.png' },
+		// {
+		// 	name: 'Arch Linux',
+		// 	logo: 'https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-1024.png'
+		// }
 	];
 
 	let currentIndex = 0;
@@ -267,7 +267,9 @@
 				</div>
 			</div>
 
-			<div class="absolute bottom-24 md:bottom-16 left-1/2 -translate-x-1/2 transform animate-bounce">
+			<div
+				class="absolute bottom-24 left-1/2 -translate-x-1/2 transform animate-bounce md:bottom-16"
+			>
 				<svg
 					class="h-5 w-5 text-gray-400 sm:h-6 sm:w-6"
 					fill="none"
